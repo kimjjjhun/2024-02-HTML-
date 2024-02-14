@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>각 열의 의미에 따라 thead, tbody, tfoot 태그로 구분</title>
+    <style>
+        table {
+            width: 100%;       
+                     /* 전체 표의 크기를 100으로 잡겠다는 문장  */
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid #535351;
+            /* 선의 굵기는 3 선의 색상은 color 로 변경 */
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>표 제목</caption>
+        <thead>                    
+            <!-- thead , tbody , tfoot 지정하면 안에 색상이나 폰트롤 변경할수있다 , 따로 다른 속성을 주고 싶을때 사용 -->
+            <tr>
+                <th>분류1</th>
+                <th>분류2</th>
+                <th>분류3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>내용</td>
+                <td>내용</td>
+                <td>내용</td>
+
+            </tr>
+
+        </tfoot>
+    </table>
+
+
+</body>
+
+</html>
