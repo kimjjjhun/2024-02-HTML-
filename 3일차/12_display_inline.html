@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            display: inline; /*옆으로 나란히 배치*/
+                            /*none :출력안됨*/
+                            /*block : 칸을 나눔*/
+            background-color: aqua;
+            /*margin: 10px;*/
+        }
+        div:nth-child(1){ /*div밑에 첫번째 아이*/
+            background-color:bisque;
+        }
+        div:nth-child(3){ /*div밑에 세번째 아이*/
+            background-color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>강원도</div>
+    <div>경기도</div>
+    <div>충청도</div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Tilte</title>
+    <style>
+        /*동생들
+        .a~.b {    <-- a클래스의 뒤에있는 아이들을 가리킴
+           
+            color: red;
+        } */
+
+        .a + .b {  /*바로 아래 동생 <-- a밑에있는 b 하나*/
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>경기도</li>
+        <ul>
+            <li>수원시</li>
+            <li>안산시</li>
+            <li>화성시</li>
+        </ul>
+        <li class="b">전라남도</li>
+        <li class="a">경상북도</li>
+        <li class="b">제주도</li>
+        <li class="b">전라남도</li>
+    </ul>
+
+</body>
+
+</html>

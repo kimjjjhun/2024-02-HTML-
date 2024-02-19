@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>외부,내부,인라인스타일시트 가져오기</title>
+ <!--   <link rel="stylesheet" href="css/style.css"> 외부스타일시트-->
+ <style>
+     h1 {
+        color:rgb(71, 111, 255); font-size:100px;
+    } 내부 스타일시트
+    img {
+        width: 300px; height: 200px;
+    } 
+ </style>
+</head>
+<body>
+    <h1 style="color: burlywood; font-size: 100px;">강원도</h1>
+    <h1>제주도</h1>
+    <img src="img/forest.jpg" alt="숲"><!--인라인스타일시트-->
+
+    <!--
+
+        1.rel="stylesheet" : rel (relation) 링크된 문서와의 관계
+        2. href="스타일시트주소.css" : 외부 css문서의 전체 경로와 이름
+        3. type="text/css" : 링크할 정보의 타입
+
+        <head>와 </head>사이에
+        <link href="경로/파일이름.css" type=text/css rel=stylesheet>
+
+        ex)
+        link href="css/cube.css" type=text/css rel=stylesheet>
+    -->
+    
+</body>
+</html>

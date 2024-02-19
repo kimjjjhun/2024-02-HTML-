@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Inline - 요소줄 바꿈이 생기지 않는 태그, 자신만의 영역을 갖지 않는 태그</title>
+  </head>
+  <body>
+    <span>오늘은 수요일</span>
+    <sub>내일은 목요일</sub>
+    <sup>어제는 화요일</sup>
+    <hr>
+
+    <form>
+      <input type="radio"> <span>7월</span>
+      <input type="checkbox"><span>8월</span>
+      <input type="text" name="name"value="이름" maxlength="3">
+      <input type="submit" value="Submit">
+
+      <select>
+           <option value="volvo">Volvo</option>
+           <option value="saab">Saab</option>
+           <option value="opel">Opel</option>
+           <option value="audi">Audi</option>
+    </select>
+
+
+
+      <input type="text" name="name" autofocus required placeholder="이름을 입력하세요">
+      <!--fieldset을 쓰면 block요소로 바뀜 -->
+      <fieldset>
+          <legend>이메일</legend>
+          <textarea name="message" rows="10"  cols="30">
+                     이메일의 내용을 쓰세요.
+          </textarea>
+          <button>click</button>
+      </fieldset>
+
+    </form>
+
+    <hr>
+
+    <img src="img/forest.jpg" width="100" height="100" alt="">
+
+  </body>
+</html>
