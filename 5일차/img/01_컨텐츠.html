@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{ margin: 0px; }
+        a{text-decoration:none}
+        #contents {width: 960px; height: 900px; border: 7px solid #666;
+        margin: 50px auto 0px;}
+        #contents > h3 {font-size: 35px; color:black; text-align: center;}
+        #contents > p {font-size: 17px; color: burlywood; text-align: center; margin: 20px 0px 30px;}
+        #contents > .box {width: 200px; height: 350px; border: 5px solid #ddd;
+        float: left; padding:20px; margin: 50px; box-shadow: 10px 4px 4px #aaa;}
+        #contents > .box img {width: 170px; height: 170px;}
+        #contents > .box img:hover {opacity: 0.5;}
+        #contents > .box > h5 {font-size: 14px; color: red; text-align: center;
+        margin: 20px 20px 0px;}
+        #contents > .box > h5 > a {color: goldenrod;}
+        #contents > .box > h5:before {content: "사은품증정"; color}
+        #contents > .box > p {font-size: 12px; color: #666; text-align: center;
+        margin: 10px 0 0 0px;}
+        #contents > .box > p > a {color: #666;}
+        
+        #contents > .box > button {background-color: burlywood; border: none;
+        color: #fff; display: block; border-radius: 10px; padding: 5px 10px; 
+        text-align: center; margin: 20px auto 0px;}
+        
+        #contents > div:first-of-type {margin: 0 0 0 50px;}
+        #contents > div:nth-last-of-type(2) {margin: 0 0 0 50px;}
+        #contents > div:last-of-type { margin: 0 0 0 50px;}
+            </style>
+</head>
+<body>
+    <div id="contents">
+        <h3>MD'S Pick</h3>
+        <p><b>텐바이텐 엠디가 자신있게 추천합니다</b></p>
+        <div class="box">
+            <a href="#"><img src="img/춘식.jpg" alt="apple"></a>
+            <h5><a href="#">춘식이 골프백 추가 런칭<span>~20%</span></a></h5>
+            <p><a href="#">춘식이 레터링 라인이<br>출시 되었어요!</a></p>
+            <button>click</button>
+        </div>
+    
+        <div class="box">
+            <a href="#"><img src="img/apple.jpg" alt="apple"></a>
+            <h5><a href="#">삼계탕 한 그릇 하실래요?<span>~81%</span></a></h5>
+            <p><a href="#">7월12일 초복, 보양식 한 끼를<br>선사해보세요!</a></p>
+            <button>click</button>
+        </div>
+
+        <div class="box">
+            <a href="#"><img src="img/apple.jpg" alt="apple"></a>
+            <h5><a href="#"></a>#썸머룩 스타일링<span>~15%</span></a></h5>
+            <p><a href="#">단 일주일 간의 에이인의<br>전상품 특가전</a></p>
+             <button>click</button>
+        </div>
+    </div>
+    
+</body>
+</html>

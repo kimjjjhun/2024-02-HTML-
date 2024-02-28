@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
+    <title>연습문제 1</title>
+
+
+
+    <style>
+
+      img {width:400px; height:200px;}
+
+      #container {width:400px; margin:0 auto;}
+
+      fieldset {margin-bottom:20px; border:1px solid #eee;}
+
+      #total {border:none; font-size:16px; font-weight:bold;}
+
+    </style>
+
+
+
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <h1>피자 주문</h1>
+
+
+
+      <img src="https://images.unsplash.com/photo-1458642849426-cfb724f15ef7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+
+      <form>
+
+        <fieldset>
+
+          <legend>사이즈</legend>
+
+          <p>Large - 24000 원 </p>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>추가 주문 </legend>        
+
+          <label><input type="checkbox" name="pickle" class="checkbx" value="800">피클(800원)</label>
+
+          <label><input type="checkbox" name="chilly" class="checkbx" value="300">칠리 소스(300원)</label>
+
+          <label><input type="checkbox" name="deeping" class="checkbx" value="200">디핑 소스(200원)</label>
+
+          <label><input type="checkbox" name="stick" class="checkbx" value="4800">치즈스틱(4개, 4800원)</label>
+
+          <label><input type="checkbox" name="salad" class="checkbx" value="2400">콘 샐러드(2400원)</label>        
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>합계</legend>
+
+          <input type="text" id="total" name="total" class="price" readonly>
+
+        </fieldset>
+
+      </form> 
+
+    </div>
+
+
+
+    <script>
+
+      var price = 24000;
+
+
+
+      var sideMenu = document.querySelectorAll(".checkbx");
+
+      var total = document.querySelector("#total");
+
+      total.value = price+"원";
+
+
+
+      for(i=0; i<sideMenu.length; i++) {
+
+        sideMenu[i].onclick = function() {
+
+          if(this.checked == true) {
+
+            price += parseInt(this.value);
+
+          }
+
+          else {
+
+            price -= parseInt(this.value);        
+
+          }
+
+          total.value = price+"원";
+
+        } 
+
+      }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+  </body>
+
+</html>

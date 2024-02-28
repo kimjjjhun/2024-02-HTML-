@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{margin: 0px; padding: 0px; font-family: "맑은 고딕";}
+        ul,ol,li{list-style: none; margin: 0px; padding: 0px;}
+        header {
+            width: 1100px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        #logo {width: 130px; height: 70px; float: left; background-color: green; 
+        margin: 10px 0 0 10px; }
+        nav {width: 740px; height: 30px; float: left; 
+        margin: 30px 0 0 80px;}
+        nav ul{font-family: "Arial"; font-weight: bold;}
+        nav > ul li {padding: 0 45px; float: left; }
+        nav > ul li a{text-decoration: none; color: black;}
+        nav > ul li a:hover{color: darkorange;}
+
+        #slider {
+            width: 1100px;
+            height: 280px;
+            margin: 0 auto;
+            background-color: tomato;
+        }
+        section {
+            width: 1100px;
+            height: 280px;
+            margin: 0 auto;
+            
+        }
+        article {width: 340px; height: 145px; float:left; 
+        margin: 20px auto; padding: 30px auto;}
+        article h3{margin 0; font-size: 16px; height: 30px; width: 100%;}
+        article img {float: left; margin: 0 10px 0 0 px;}
+        article h4{margin: 0; font-size: 14px; height: 30px;}
+        article p{font-family: "돋움"; font-size: 12px; color: #666;}
+        article .icon{width: 100px; height: 75px; float: left; margin: 0 0 0 5;
+        background-color: white; text-align: center;}
+        article .icon img{float: left; margin: 35px;}
+        article .icon span{width: 100%; text-align: center; float: left;
+        font-size: 12px; margin: -30px 0 0 15px; display: block;}
+        
+        footer {
+            width: 1100px;
+            height: 100px;
+            margin: 0 auto;
+            
+        }
+        footer img {float: left; margin: 0 auto;}
+        footer p {font-family: "돋움"; font-size: 15px; margin: 100px 0 0 0;
+        text-align:end; font-weight: bold; padding: 30px;}
+        
+    </style>
+</head>
+<header>
+<div id="logo"><img src="img/logo.jpg" width="130px" height="70px" alt="로고"></div>
+<nav>
+    <ul>
+        <li><a href="#">VEHICLES</a></li>
+        <li><a href="#">PRICE</a></li>
+        <li><a href="#">OFFERS</a></li>
+        <li><a href="#">SECONDHSND CAR</a></li>
+    </ul>
+</nav>
+</header>
+<div id="slider"><img src="img/landrover.jpg" width="1100px" height="280px"></div>
+<section>
+<article>
+    <h3>NEWS</h3>
+    <a href="#"><img src="img/4.jpg"></a>
+    <h4>Discovery 5</h4>
+    <p>랜드로버가 만든 정통 SUV, 디스커버리의 신형 모델이 다음 달 공개된다.</p>
+</article>
+<article>
+    <h3>랜드로버 모델 살펴보기</h3>
+    <a href="#"><img src="img/8.jpg"></a>
+</article>
+<article id="test">
+    <h3>고객지원</h3>
+    <div class="icon">
+        <a href="#"><img src="img/icon3.jpg"></a>
+        <span>시승신청</span>
+    </div>
+
+    <div class="icon">
+        <a href="#"><img src="img/icon4.jpg"></a>
+        <span>뉴스레터 신청</span>
+    </div>
+
+    <div class="icon">
+        <a href="#"><img src="img/icon5.jpg"></a>
+        <span>전시장 찾기</span>
+    </div>
+</article>
+</section>
+<footer>
+    <img src="img/logo.jpg" width="130px" height="70px" alt="로고">
+    <p>이젠컴퓨터아카데미 주소 경기 수원시 팔달구 권광로 146 4층 대표자 주대진 
+        사업자등록번호 113-91-12270</p>
+</body>
+</html>

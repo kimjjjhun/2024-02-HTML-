@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>클릭할경우test를 숨김</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(
+function(){
+    $("button").click(function(){
+        $(".test").hide();
+    })
+
+  });
+    </script>
+</head>
+<body>
+
+    <h2 class="test">선택자</h2>
+    <button>Click me</button>
+    
+</body>
+</html>

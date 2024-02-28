@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}  /*style 작성시 초기값 정렬*/
+        #wrap{width: 100%;}
+        #kakao{width: 100%;}
+        #wrap > h5{font-size: 30px; color: coral;}
+        #kakao > h5{font-size: 30px; color: burlywood;}
+        form{width: 95%; margin: 0 auto;}
+        span{padding: 0 10px; font-size: 14px;}
+        .imgbox{width: 500px; height: 300px; padding: 10px 0;
+        position: relative; border-radius: 20px; overflow: hidden;}
+        /*position : 좌표를 이미지박스 기준으로 0.0을 맞추는기능*/
+        /*이걸통하여 이미지들을 겹쳐놓을 수 있다.*/
+        /*overflow : hidden 크기를 벗어나는 아이들은 숨기는기능*/
+        .imgbox img {width: 100%; height: 100%;
+        position: absolute; top: 0; left: 0;}
+        .imgbox img:not(:first-child) {display: none;}
+        /*첫번째자식 이미지가 아니면 모두 없애는기능*/
+        input[type="radio"]{margin: 10px 0;}
+        input[value="라이언"]:checked ~ .imgbox img[alt="라이언"] {display: block;}
+        input[value="네오"]:checked ~ .imgbox img[alt="네오"] {display: block;}
+        input[value="춘식"]:checked ~ .imgbox img[alt="춘식"] {display: block;}
+    </style>
+</head>
+<body>
+    
+    <div id="wrap">
+        <h5>Q1.키가 제일 큰 프렌즈는?</h5>
+        <form>
+            <div class="view">
+                <input type="radio" name="mun" value="라이언" checked><span>라이언</span><br>
+                <input type="radio" name="mun" value="네오"><span>네오</span><br>
+                <input type="radio" name="mun" value="춘식"><span>춘식</span><br>
+                <div class="imgbox">
+                    <img src="img/img/라이언.jpg" alt="라이언">
+                    <img src="img/img/네오.jpg" alt="네오">
+                    <img src="img/img/춘룡.jpg" alt="춘식">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div id="kakao">
+        <h5>Q2.키가 두번째로 큰 프렌즈는?</h5>
+        <form>
+            <div class="kjh">
+                <input type="radio" name="mun" value="라이언" checked><span>라이언</span><br>
+                <input type="radio" name="mun" value="네오"><span>네오</span><br>
+                <input type="radio" name="mun" value="춘식"><span>춘식</span><br>
+                <div class="imgbox">
+                    <img src="img/img/라이언.jpg" alt="라이언">
+                    <img src="img/img/네오.jpg" alt="네오">
+                    <img src="img/img/춘룡.jpg" alt="춘식">
+                </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

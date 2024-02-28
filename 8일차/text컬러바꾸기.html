@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  
+  </head>
+  <body>
+
+    <button id="btn1">click</button>
+
+    <h1 id="textch"> text  color  바꾸기</h1>
+
+
+    <script>
+      var textcolor=["tomato","gold","red","cyan","magenta"];
+      var i=0;
+      btn1.onclick=function(){
+        textch.style.color=textcolor[i];
+        i++;  
+        if(i>=textcolor.length){
+          i=0;
+        }
+      } 
+
+    </script>
+
+  </body>
+</html>

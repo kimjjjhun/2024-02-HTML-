@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>login</title>
+</head>
+<body>
+    <main>
+        <div class="loginWrap">
+            <h1>로그인 </h1>
+
+            <form action="/login" method="">
+                <div class="loginFormBox">
+                    <input type="text" name="email" placeholder="이메일을 입력하세요" onfocus="this.placeholder = ''" onblur="this.placeholder = '이메일을 입력하세요'">
+                </div>
+                <div class="loginFormBox">
+                    <input type="password" name="password" placeholder="비밀번호를 입력하세요" onfocus="this.placeholder = ''" onblur="this.placeholder = '비밀번호을 입력하세요'">
+                </div>
+
+                <div class="pwdFind">
+                    <a href="">비밀번호 찾기</a>
+                </div>
+
+                <button class="loginBtn">이메일로 로그인</button>
+            </form>
+
+            <div class="joinAndEmailFind">
+                <a href="">회원가입</a>
+                <a href="">이메일 찾기</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

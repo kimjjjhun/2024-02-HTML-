@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #contents {
+            width: 1100px;
+            height: 600px;
+            border: 3px solid #666;
+            margin: 50px auto 0px;
+        }
+
+        #contents>h3 {
+            font-size: 35px;
+            color: burlywood;
+            text-align: center;
+        }
+
+        #contents>p {
+            font-size: 17px;
+            color: r#000;
+            text-align: center;
+            margin: 20px 0px 30px;
+        }
+
+        #contents>.box {
+            width: 300px;
+            height: 380px;
+            border: 2px solid #ddd;
+            float: left;
+            padding: 10px;
+            margin: 20px;
+            box-shadow: 10px 10px 10px goldenrod; background-color: black;
+        }
+                  /*first 첫번째 */
+        #contents>div:first-of-type {
+            margin: 0 0 0 50px;
+        }
+                 /*nth 두번째*/
+        #contents>div:nth-of-type(2) {
+            margin: 0 0 0 50px;
+        }
+                 /*last 마지막*/
+        #contents>div:last-of-type {
+            margin: 0 0 0 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contents">
+        <h3>MD's Pick</h3>
+        <p><b>텐바이텐 엠디</b>가 자신있게 <b>추천</b>합니다</p>
+        <div class="box">
+        </div>
+
+        <div class="box">
+        </div>
+
+        <div class="box">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

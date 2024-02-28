@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #wrap{width: 100;}
+        h1{text-align: center; background-color: rgb(78, 78, 88); color:rgb(235, 235, 235);
+        padding: 20px 0;}
+        form{width: 95%; margin: 0 auto;}
+        label{display: block; background-color: rgb(224, 224, 224); 
+        padding: 10px 20px; color: rgb(0, 0, 0);border-radius: 10px;
+        margin: 20px 0;}
+        label:nth-last-of-type(2) {margin: 50px 0;}
+        .view{transition: all 0.7s ease; opacity: 0;}
+        span{padding: 0 10px; font-size: 14px;}
+        input[type="checkbox"]:checked ~ .view {opacity: 1;}
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>우리의 문화재</h1>
+        <form>
+            <label>선택을 시작하시겠습니까?</label>
+            <input type="checkbox" value="start">
+            <span>시작함</span>
+            <div class="view">
+            <label>원하는 문화재는?</label>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

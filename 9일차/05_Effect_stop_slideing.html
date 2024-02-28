@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #panel, #flip {
+          padding: 5px;
+          font-size: 18px;
+          text-align: center;
+          background-color: burlywood;
+          color: white;
+          border: solid 1px burlywood;
+          border-radius: 3px;
+        }
+        
+        #panel {
+          padding: 50px;
+          display: none;
+        }
+        </style>
+   
+    <script>$(document).ready(function(){
+        $("#flip").click(function(){
+            $("#panel").slideDown(4000);
+        })
+
+        // $("#stop").click(function(){
+            // $("#panel").stop();
+        // })
+        $("#stop").click(function(){
+             $("#panel").hide();
+         })
+
+    });
+</script>
+</head>
+<body>
+    <button id="stop">Stop sliding</button>
+
+<div id="flip"><h1>팀프로젝트</h1></div>
+<div id="panel">어서오세요</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Page Title</title>
+
+    <style>
+
+      #box{width:200px; height:200px; border:1px solid #ccc; margin:30px;}
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+
+    <h1>점심메뉴 고르기</h1>
+
+    <button id="btn1">click</button>
+
+    <div id="box">오늘의 메뉴는?</div>
+
+    <script>
+
+      btn1.onclick=function(){
+
+        var menu=["짜장면","돈가스","된장국","김치찌개","회덮밥"];
+
+        var menuNum=Math.floor(Math.random()*menu.length);
+
+        var result=menu[menuNum];
+
+        box.innerHTML=result;   
+
+      }   
+
+    </script>
+
+
+  </body>
+
+
+
+</html>

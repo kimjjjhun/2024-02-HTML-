@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //요소 노드 생성하기
+        const aEl = document.createElement("a");
+        document.body.appendChild(aEl);
+        
+        //텍스트 노드 추가하기
+        const txtEl = document.createTextNode("길벗");
+        document.querySelector("a").appendChild(txtEl);
+
+        //href 속성 추가하기
+        const hrefArr = document.createAttribute("href");
+        hrefArr.value = "https://www.gilbut.co.kr";
+        document.querySelector("a").setAttributeNode(hrefArr);
+    </script>
+</body>
+</html>

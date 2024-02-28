@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <style>
+        #banner{width: 500px; height: 200px; background-color: gold;}
+        #banner > .box1{width: 100px; height: 100px; background-color: pink;
+        border:5px solid #666; margin: 20px; display:inline-block;}
+        
+        #banner > .box2{width: 100px; height: 100px; background-color: tomato;
+        box-sizing:border-box; border: 20px solid #666; margin: 20px; display:inline-block;}
+        
+        #banner > .box3{width: 100px; height: 100px; background-color: tomato;
+        box-sizing:content-box; border: 20px solid #666; margin: 20px; display:inline-block;}
+        /*content-box--> 전체크기 밖으로 간격*/
+        /*border-box--> 전체크기 고정 안으로 간격*/ /*핸들링하기쉽다.*/
+    </style>
+</head>
+<body>
+    <div id="banner">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    
+</body>
+</html>

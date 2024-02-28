@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/join.css">
+    <script src="https://kit.fontawesome.com/f21f7d3508.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="js/join.js"></script>
+    <title>join</title>
+</head>
+<body>
+    <main>
+        <div class="joinWrap">
+            <h1>회원가입</h1>
+
+            <form action="/join" method="post" id="joinForm">
+                <p>회원정보를 입력해주세요</p>
+
+                <div class="joinBox">
+                    <label for="email"><i class="fa-regular fa-envelope"></i></label>
+                    <input type="text" name="email" id="email" placeholder="아이디(이메일)">
+                </div>
+                <div class="joinBox">
+                    <label for="password"><i class="fa-solid fa-lock"></i></label>
+                    <input type="password" name="password" id="password" placeholder="비밀번호">
+                </div>
+                <div class="joinBox">
+                    <label for="name"><i class="fa-regular fa-user"></i></label>
+                    <input type="text" name="name" id="name" placeholder="이름">
+                </div>
+                <div class="joinBox">
+                    <label for="phone"><i class="fa-solid fa-mobile-screen-button"></i></label>
+                    <input type="text" name="phone" id="phone" placeholder="휴대폰 번호">
+                </div>
+            </form>
+
+            <div class="joinTerms">
+                <p>서비스약관에 동의해주세요</p>
+
+                <form action="" class="checkForm">
+                    <input type="checkbox" id="allTerms">
+                    <label for="allTerms">모두 동의합니다.</label>
+
+                    <div class="termsBox">
+                        <div class="">
+                            <input type="checkbox" id="check1" class="termsCheck">
+                            <label for="check1">[필수] 만 14세 이상입니다</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="check2" class="termsCheck">
+                            <label for="check2">[필수] 이용약관 동의</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="check3" class="termsCheck">
+                            <label for="check3">[필수] 전자금융거래 이용약관 동의</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="check4" class="termsCheck">
+                            <label for="check4">[필수] 개인정보 수집 및 이용 동의</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="check5" class="termsCheck">
+                            <label for="check5">[필수] 개인정보 제공 동의</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
